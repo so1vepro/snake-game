@@ -2,7 +2,7 @@ var s;
 var scl = 20;
 
 var food;
-
+//Function khởi tạo khung để cho hàm draw vẽ lên
 function setup() {
   createCanvas(600, 600);
   s = new Snake();
@@ -21,9 +21,9 @@ function pickLocation() {
 function mousePressed() {
   s.total++;
 }
-
+//Function dùng để vẽ hình lên trên hình Canavs do function setup tạo nên
 function draw() {
-  background(51);
+  background(51); //khởi tạo màu cho hình Canvas
 
   if (s.eat(food)) {
     pickLocation();
